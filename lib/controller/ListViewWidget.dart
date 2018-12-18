@@ -24,7 +24,6 @@ class ListViewWidget extends StatelessWidget{
           ],
         ),
         onTap: (){
-//          Navigator.push(context, MaterialPageRoute(builder: (context)=>ListViewDetailWidget(post: posts[index])));
         _navigationDetails(context,posts[index]);
         },
       ),
@@ -39,7 +38,6 @@ class ListViewWidget extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return ListView.builder(
       itemBuilder: _listItemBuilder,
       itemCount: posts.length,
