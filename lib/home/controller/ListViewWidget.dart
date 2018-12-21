@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/home/model/post.dart';
 import 'package:flutter_demo/home/controller/ListViewDetailWidget.dart';
+import 'dart:io';
+import 'dart:convert';
 
 class ListViewWidget extends StatelessWidget{
 
@@ -11,7 +13,7 @@ class ListViewWidget extends StatelessWidget{
       child: GestureDetector(
         child: Column(
           children: <Widget>[
-            Image.network(posts[index].imageUrl),
+            Image.network(posts[index].imageUrl,fit: BoxFit.fill),
             SizedBox(height: 16),
             Text(posts[index].title,
               style: Theme.of(context).textTheme.title,
