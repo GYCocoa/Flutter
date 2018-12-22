@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'ListViewWidget.dart';
 import 'DrawerControl.dart';
+import 'FavoriteViews.dart';
 
 class HomeController extends StatefulWidget {
   @override
@@ -42,7 +43,7 @@ class HomeState extends State<HomeController> {
               children: <Widget>[
 //            Icon(Icons.local_florist,size: 100,color: Colors.black12),
                 ListViewWidget(),
-                Icon(Icons.change_history,size: 100,color: Colors.black12),
+                FavoriteController(),
                 Icon(Icons.directions_bike,size: 100,color: Colors.black12),
               ]),
           drawer: DrawerControl(),

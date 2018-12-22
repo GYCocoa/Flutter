@@ -8,14 +8,15 @@ void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
   @override
-  GuoheState createState() => new GuoheState();
+  GYZState createState() => new GYZState();
 }
 
-class GuoheState extends State<MyApp> with SingleTickerProviderStateMixin {
+class GYZState extends State<MyApp> with SingleTickerProviderStateMixin {
   TabController controller;
 
   @override
   void initState() {
+    super.initState();
     controller = new TabController(length: 4, vsync: this);
   }
 

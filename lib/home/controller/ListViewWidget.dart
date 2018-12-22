@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/home/model/post.dart';
 import 'package:flutter_demo/home/controller/ListViewDetailWidget.dart';
-import 'dart:io';
-import 'dart:convert';
 
 class ListViewWidget extends StatelessWidget{
 
